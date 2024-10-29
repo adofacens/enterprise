@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações do documento -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Compatibilidade com navegadores antigos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link para o arquivo de estilo CSS -->
+    <!-- Importando o Bootstrap para layout responsivo -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Importando fonte personalizada do Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    />
+    <!-- Título da página -->
+    <title>..:: Discovery Space - Facens ::..</title>
+  </head>
+  <body>
+    <!-- Início do cabeçalho com o menu de navegação -->
+    <header>
+      <div class="container">
+        <!-- Navbar responsiva utilizando o Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <!-- Logo da página -->
+          <a id="logo" class="navbar-brand" href="index.html">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/logo-facens.png"
+              alt="Logo Facens"
+            />
+          </a>
+          <!-- Botão para expandir o menu em telas menores -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Itens do menu de navegação -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="streaming.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Início do Carousel de imagens -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-pause="true"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="https://www.facens.br/wp-content/uploads/2020/12/slide-facens.jpg"
+            class="d-block w-100"
+            alt="Campus Facens"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="https://www.facens.br/wp-content/uploads/2020/12/eventos-facens.jpg"
+            class="d-block w-100"
+            alt="Eventos Facens"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="https://www.facens.br/wp-content/uploads/2020/12/tecnologia-facens.jpg"
+            class="d-block w-100"
+            alt="Tecnologia na Facens"
+          />
+        </div>
+      </div>
+      <!-- Botões para navegação entre slides -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+    <!-- Fim do Carousel -->
+
+    <!-- Início da seção de banner -->
+    <div class="section-banner-home">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Imagem do banner -->
+          <div class="col-md-6">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/banner-novidade.jpg"
+              class="img-fluid"
+              alt="Banner Facens"
+            />
+          </div>
+          <!-- Texto do banner -->
+          <div class="col-md-6">
+            <h1>Venha conhecer nossos cursos de tecnologia!</h1>
+            <p>
+              A Facens oferece uma ampla gama de cursos voltados para
+              tecnologia, inovação e muito mais.
+            </p>
+            <!-- Botão para saber mais -->
+            <a href="produtos.html" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da seção de banner -->
+
+    <!-- Início da seção de destaque -->
+    <div class="destaque text-center">
+      <div class="container">
+        <h2>Explore nosso campus e inovação</h2>
+        <p>
+          Conheça nossas instalações modernas, laboratórios equipados e tudo que
+          a Facens oferece.
+        </p>
+        <div class="row">
+          <!-- Imagens dos laboratórios -->
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-1.jpg"
+              class="img-fluid"
+              alt="Laboratório 1"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-2.jpg"
+              class="img-fluid"
+              alt="Laboratório 2"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-3.jpg"
+              class="img-fluid"
+              alt="Laboratório 3"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-4.jpg"
+              class="img-fluid"
+              alt="Laboratório 4"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-5.jpg"
+              class="img-fluid"
+              alt="Laboratório 5"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-2">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/lab-6.jpg"
+              class="img-fluid"
+              alt="Laboratório 6"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da seção de destaque -->
+
+    <!-- Início da seção de galeria -->
+    <div class="galeria">
+      <div class="container">
+        <!-- Título e texto introdutório -->
+        <div class="texto-galeria">
+          <h2>Nossos Eventos Recentes</h2>
+          <p>
+            Confira algumas das atividades e eventos realizados recentemente na
+            Facens.
+          </p>
+        </div>
+        <div class="row gallery">
+          <!-- Fotos da galeria -->
+          <div class="col-md-4">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/evento-1.jpg"
+              class="img-fluid"
+              alt="Evento 1"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/evento-2.jpg"
+              class="img-fluid"
+              alt="Evento 2"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://www.facens.br/wp-content/uploads/2020/12/evento-3.jpg"
+              class="img-fluid"
+              alt="Evento 3"
+              onerror="this.onerror=null; this.src='./path/to/default-image.jpg';"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da seção de galeria -->
+
+    <!-- Início do rodapé -->
+    <footer class="rodape">
+      <div class="container">
+        <div class="row">
+          <!-- Informações de contato -->
+          <div class="col-md-4">
+            <h5>Contato</h5>
+            <!-- Título da seção de contato -->
+            <p>Centro Universitário Facens</p>
+            <!-- Nome da instituição -->
+            <p>Rua Salvador Corrêa, 777</p>
+            <!-- Endereço da instituição -->
+            <p>Telefone: +55 (15) 3238-1200</p>
+            <!-- Telefone de contato -->
+          </div>
+          <!-- Logo da Facens no rodapé -->
+          <div class="col-md-4 text-center">
+            <a href="index.html">
+              <img
+                src="https://www.facens.br/wp-content/uploads/2020/12/logo-facens.png"
+                alt="Logo Facens"
+              />
+            </a>
+          </div>
+          <!-- Ícones de redes sociais -->
+          <div class="col-md-4 redes-sociais text-center">
+            <!-- Links para as redes sociais com ícones -->
+            <a href="#"
+              ><img
+                src="https://www.facens.br/wp-content/uploads/2020/12/face.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://www.facens.br/wp-content/uploads/2020/12/insta.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://www.facens.br/wp-content/uploads/2020/12/youtube.png"
+                alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://www.facens.br/wp-content/uploads/2020/12/linkedin.png"
+                alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+        <!-- Direitos autorais no rodapé -->
+        <div class="direitos text-center">
+          <p>
+            © 2024 Centro Universitário Facens - Todos os Direitos Reservados
+          </p>
+          <!-- Declaração de direitos autorais -->
+        </div>
+      </div>
+    </footer>
+    <!-- Fim do rodapé -->
+
+    <!-- Importação do script do Bootstrap para funcionalidades JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

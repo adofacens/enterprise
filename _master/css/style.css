@@ -1,0 +1,353 @@
+/* Variáveis de cores e espaçamentos */
+:root {
+    --primary-color: #297ee6;
+    /* Cor primária usada em vários elementos */
+    --secondary-color: #003f91;
+    /* Cor secundária usada em elementos como o rodapé */
+    --hover-color: #ff0000;
+    /* Cor aplicada em efeitos de hover */
+    --bg-color: #e7e7e7;
+    /* Cor de fundo padrão para o body e algumas seções */
+    --text-color: #000;
+    /* Cor padrão para o texto */
+    --font-main: 'Bebas Neue', sans-serif;
+    /* Fonte principal usada no site */
+    --font-secondary: sans-serif;
+    /* Fonte secundária padrão */
+    --transition-duration: 0.3s;
+    /* Duração padrão para transições suaves */
+    --border-radius: 10px;
+    /* Raio de borda para elementos com bordas arredondadas */
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
+/* Importa a fonte Bebas Neue do Google Fonts */
+
+/* Reset de estilo para garantir consistência */
+* {
+    box-sizing: border-box;
+    /* Garante que padding e border não afetem a largura e altura total do elemento */
+}
+
+body {
+    font-family: var(--font-main);
+    /* Aplica a fonte principal ao body */
+    margin: 0;
+    /* Remove margens padrão do body */
+    padding: 0;
+    /* Remove padding padrão do body */
+    background-color: var(--bg-color);
+    /* Aplica a cor de fundo padrão ao body */
+}
+
+/* ===== Estilos do Header ===== */
+header {
+    background-color: var(--secondary-color);
+    /* Define a cor de fundo do cabeçalho */
+    color: white;
+    /* Define a cor do texto como branco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Aplica uma sombra ao cabeçalho para dar profundidade */
+}
+
+#header {
+    display: flex;
+    /* Usa flexbox para alinhar os itens no cabeçalho */
+    align-items: center;
+    /* Centraliza verticalmente os itens do cabeçalho */
+    justify-content: space-between;
+    /* Espaça os itens do cabeçalho igualmente */
+    padding: 1rem 2rem;
+    /* Aplica padding ao cabeçalho */
+}
+
+#logo img {
+    height: 55px;
+    /* Define a altura do logo */
+    transition: var(--transition-duration);
+    /* Aplica transição suave ao logo */
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+    /* Aumenta o logo quando o mouse passa sobre ele */
+}
+
+/* ===== Estilos do Menu ===== */
+#menu {
+    display: flex;
+    /* Usa flexbox para exibir os itens do menu em linha */
+    list-style: none;
+    /* Remove marcadores da lista */
+    gap: 2rem;
+    /* Espaçamento entre os itens do menu */
+}
+
+#menu a {
+    color: white;
+    /* Define a cor do texto dos links como branco */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    font-size: 1.1em;
+    /* Aumenta o tamanho da fonte dos links */
+    text-transform: uppercase;
+    /* Transforma o texto para letras maiúsculas */
+    transition: var(--transition-duration);
+    /* Aplica transição suave ao passar o mouse */
+}
+
+#menu a:hover {
+    color: var(--hover-color);
+    /* Altera a cor do texto no hover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sombra ao texto no hover */
+}
+
+/* ===== Seções ===== */
+.section-banner-home {
+    padding: 60px 0;
+    /* Aplica padding vertical na seção do banner */
+    background-color: #5d5d5d;
+    /* Cor de fundo do banner */
+    text-align: center;
+    /* Centraliza o texto na seção do banner */
+}
+
+.section-banner-home img {
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    /* Adiciona margem ao topo do texto no banner */
+    color: white;
+    /* Define a cor do texto no banner como branco */
+}
+
+.destaque {
+    padding: 60px 0;
+    /* Aplica padding vertical na seção de destaque */
+}
+
+.destaque h2 {
+    margin-top: 15px;
+    /* Margem superior no título da seção de destaque */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 24px;
+    /* Define o tamanho da fonte */
+    font-weight: bold;
+    /* Torna o texto em negrito */
+    color: var(--primary-color);
+    /* Define a cor do texto como a cor primária */
+}
+
+/* ===== Galeria de Imagens ===== */
+.galeria {
+    background-color: #f8f9fa;
+    /* Cor de fundo da galeria */
+    padding: 60px 0;
+    /* Padding vertical na galeria */
+}
+
+.galeria .gallery img {
+    width: 100%;
+    /* Imagem preenche toda a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    transition: transform 0.5s ease;
+    /* Transição suave ao aplicar transformações */
+}
+
+.galeria .gallery img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem ao passar o mouse */
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+    background-color: var(--secondary-color);
+    /* Cor de fundo do rodapé */
+    color: white;
+    /* Cor do texto no rodapé */
+    padding: 20px 0;
+    /* Padding vertical no rodapé */
+    text-align: center;
+    /* Centraliza o texto no rodapé */
+}
+
+.rodape h5 {
+    margin-bottom: 15px;
+    /* Margem inferior no título do rodapé */
+}
+
+/* ===== Estilos Responsivos ===== */
+@media (max-width: 600px) {
+    #menu {
+        flex-direction: column;
+        /* Muda o menu para uma coluna em telas pequenas */
+        display: none;
+        /* Esconde o menu por padrão */
+    }
+
+    #menu.active {
+        display: flex;
+        /* Mostra o menu quando ativo */
+        background: var(--bg-color);
+        /* Define cor de fundo do menu ativo */
+        position: absolute;
+        /* Posiciona o menu de forma absoluta */
+        top: 70px;
+        /* Posiciona o menu a partir do topo */
+        right: 0;
+        /* Alinha o menu à direita */
+        z-index: 1000;
+        /* Garante que o menu fique acima de outros elementos */
+        width: 200px;
+        /* Largura do menu */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        /* Adiciona sombra ao menu */
+    }
+
+    #btn-mobile {
+        display: flex;
+        /* Mostra o botão de menu em telas pequenas */
+        padding: 0.5rem;
+        /* Adiciona padding ao botão */
+        background: none;
+        /* Remove o fundo do botão */
+        cursor: pointer;
+        /* Muda o cursor ao passar sobre o botão */
+    }
+
+    #hamburger {
+        width: 30px;
+        /* Largura do ícone do hambúrguer */
+        border-top: 2px solid white;
+        /* Linha superior do ícone do hambúrguer */
+        position: relative;
+        /* Posiciona o ícone relativamente */
+    }
+
+    #hamburger::before,
+    #hamburger::after {
+        content: '';
+        /* Cria pseudo-elementos para as linhas do ícone */
+        display: block;
+        /* Exibe as linhas */
+        width: 30px;
+        /* Largura das linhas */
+        height: 2px;
+        /* Altura das linhas */
+        background: white;
+        /* Cor das linhas */
+        position: absolute;
+        /* Posiciona as linhas de forma absoluta */
+        transition: var(--transition-duration);
+        /* Transição suave para as linhas */
+    }
+
+    #hamburger::before {
+        top: -8px;
+        /* Espaço acima da linha superior */
+    }
+
+    #hamburger::after {
+        top: 8px;
+        /* Espaço abaixo da linha inferior */
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(45deg);
+        /* Rotaciona a linha superior ao ativar */
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-45deg);
+        /* Rotaciona a linha inferior ao ativar */
+    }
+}
+
+/* ===== Estilos de Contato ===== */
+.form-control[type="text"] {
+    border: 1px solid #ccc;
+    /* Borda do campo de texto */
+    margin: 10px 0;
+    /* Margem vertical ao redor do campo */
+    padding: 10px;
+    /* Padding interno no campo de texto */
+    width: 100%;
+    /* Campo de texto preenche toda a largura disponível */
+}
+
+/* ===== Ícone do WhatsApp ===== */
+.whatsapp {
+    position: fixed;
+    /* Posiciona o ícone fixamente na tela */
+    z-index: 200;
+    /* Garante que o ícone fique acima de outros elementos */
+    top: 400px;
+    /* Posição vertical do ícone */
+    right: 20px;
+    /* Posição horizontal do ícone */
+}
+
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite alternate;
+    /* Animação de pulso para o ícone do WhatsApp */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Escala inicial do ícone */
+        filter: brightness(100%);
+        /* Brilho inicial do ícone */
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Escala final do ícone */
+        filter: brightness(110%);
+        /* Brilho final do ícone */
+    }
+}
+
+/* ===== Cartões de Produtos ===== */
+.card img {
+    height: auto;
+    /* Mantém a proporção da imagem do cartão */
+    width: 100%;
+    /* Imagem preenche toda a largura do cartão */
+}
+
+.hover-overlay .mask:hover {
+    opacity: 1;
+    /* Efeito de destaque ao passar o mouse sobre a máscara */
+}
+
+/* Comentários Detalhados
+Variáveis CSS: Utilizamos variáveis (:root) para definir cores, fontes, espaçamentos e outras propriedades que podem ser reutilizadas ao longo do CSS. Isso torna o código mais fácil de manter e atualizar.
+
+Reset de Estilo: O * com box-sizing: border-box; garante que o padding e a borda não afetem a largura e altura de elementos, evitando surpresas em layouts.
+
+Estilo do body: Define a fonte e a cor de fundo padrão do corpo da página.
+
+Header: Estiliza a barra de navegação superior. Usa flexbox para alinhamento, aplica sombra para dar profundidade e transições suaves para interatividade.
+
+Menu: Define o estilo do menu de navegação, incluindo estilos de links, efeitos de hover e espaçamento.
+
+Seções: Cada seção (.section-banner-home, .destaque, .galeria) tem seu próprio estilo, com padding e cores de fundo específicas, bem como alinhamento de texto.
+
+Rodapé: O rodapé é estilizado para centralizar o texto e usar cores que combinam com o tema geral do site.
+
+Estilos Responsivos: Usa media queries para adaptar o layout para telas menores. Isso inclui modificar o menu para uma coluna e aplicar estilos diferentes para elementos como o botão de hambúrguer.
+
+Formulários: Estiliza campos de entrada de texto, garantindo que ocupem toda a largura disponível e tenham bordas e padding apropriados.
+
+Ícone do WhatsApp: O ícone é posicionado fixamente na tela e recebe uma animação de pulso para chamar a atenção.
+
+Cartões de Produtos: Imagens de produtos dentro de cartões são dimensionadas corretamente, garantindo que mantenham sua proporção. */
