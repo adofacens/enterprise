@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definindo a codificação de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Configurando as propriedades da viewport para design responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título do documento exibido na aba do navegador -->
+    <title>Manipulando o DOM - Principais Funções</title>
+</head>
+<body>
+    <!-- Div para conter um elemento de parágrafo -->
+    <div>
+        <!-- Parágrafo com atributo de classe -->
+        <p class="paragrafo1">Primeiro parágrafo</p>
+    </div>
+
+    <!-- Div para conter uma lista não ordenada (ul) -->
+    <div>
+        <!-- Lista não ordenada com dois itens de lista (li) -->
+        <ul>
+            <!-- Item de lista com atributo de ID -->
+            <li id="item1">Item 1</li>
+            <!-- Segundo item de lista sem atributo de ID -->
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <!-- Div vazia para exibir mensagens posteriormente via JavaScript -->
+    <div class="mensagem"></div>
+
+    <script>
+        // Selecionando o elemento de título usando o método querySelector
+        let titulo = document.querySelector('title');
+        // Exibindo o conteúdo de texto do título usando a função window.alert
+        window.alert(titulo.textContent);
+
+        // Selecionando o primeiro parágrafo pela classe usando querySelector
+        let paragrafoPorClasse = document.querySelector('.paragrafo1');
+        // Alterando o conteúdo de texto do parágrafo selecionado
+        paragrafoPorClasse.textContent = 'Parágrafo modificado';
+
+        // Selecionando o primeiro item de lista pelo ID e modificando seu conteúdo diretamente
+        let item = document.querySelector('#item1').textContent = 'Modificado';
+
+        // Linha comentada - outra maneira de selecionar o primeiro elemento li, mas não utilizada
+        // document.querySelector('li').textContent = 'teste';
+
+        // Selecionando todos os elementos li e modificando o segundo
+        let listaLi = document.querySelectorAll('li');
+        listaLi[1].textContent = 'Consegui';
+
+        // Exibindo o conteúdo de texto do elemento com ID 'item1'
+        console.log(document.getElementById('item1').textContent);
+        // Exibindo o conteúdo de texto do primeiro elemento com classe 'paragrafo1'
+        console.log(document.getElementsByClassName('paragrafo1')[0].textContent);
+    </script>
+</body>
+</html>

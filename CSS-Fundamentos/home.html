@@ -39,39 +39,308 @@
     </header>
     <!-- Fim Menu -->
     <!-- Início Carousel Página Home -->
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-pause="true"
-    >
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="../img/resort1.jfif" class="d-block w-100" alt="..." />
+    <div class="container">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Para retirar a função do mouse com STOP no carousel adicione
+    a função data-bs-pause="none" -->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="../img/resort1.jfif" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img
+              src="../img/resort_maldivas.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img
+              src="../img/resort_orlando.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img
+              src="../img/bungalows-facing-mont.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="../img/resort_maldivas.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="../img/resort_orlando.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="../img/bungalows-facing-mont.jpg" class="d-block w-100" alt="..." />
-        </div>
+        <!-- Início controle Carousel -->
+        <button
+          class="carousel-control-prev"
+          data-bs-target="#carouselExampleInterval"
+          type="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-target="#carouselExampleInterval"
+          type="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        <!-- Fim controle Carousel -->
       </div>
-      <!-- Início controle Carousel -->
-       <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-       </button>
-       <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-       </button>
-      <!-- Fim controle Carousel -->
     </div>
     <!-- Fim Carousel Página Home -->
+    <!-- Início Banner -->
+    <div class="section-banner-home">
+      <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col-12 col-md-6">
+            <figure>
+              <img src="./img/perfumes/destaque/hugo_boss.webp.jpg" alt="Banner Home">
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <section class="text-banner d-none d-md-block">
+              <h1>Conheça o mais novo lançamento da Hugo Boss!</h1>
+              <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempora repudiandae odio autem. Nesciunt, voluptatum? Id, veniam? Omnis nostrum amet optio obcaecati! Soluta ratione in ipsum impedit nemo aliquid pariatur?</p>
+              <a href="#">Saiba Mais!</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Banner -->
+     <!-- Início Destaque -->
+    <div class="destaque">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!-- Início tag section do texto destaque -->
+          <section class="col-12">
+            <h2>Coleções de Colônias do Verão!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe non nam consequatur quae? Soluta illum minus dolores dignissimos facilis provident neque nesciunt incidunt nulla similique adipisci, accusamus quod unde ea.</p>
+        </section>
+          <!-- Fim tag section do texto destaque -->
+           <!-- Início Imagem 1 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/la vie est belle.webp" alt="La Vie Est Belle"></a>
+              <figcaption>La Vie Est Belle <br> $ 70</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 1 -->
+           <!-- Início Imagem 2 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/ferrari.jpg" alt="Ferrari"></a>
+              <figcaption>Ferrari <br> $ 90</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 2 -->
+           <!-- Início Imagem 3 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/Marc Jacobs Daisy Eau So Fresh.jpg" alt="Marc Jacobs"></a>
+              <figcaption>Marc Jacobs <br> $ 110</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 3 -->
+           <!-- Início Imagem 4 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/million.webp" alt="1 Million"></a>
+              <figcaption>1 Million <br> $ 150</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 4 -->
+           <!-- Início Imagem 5 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/7363947210_1.webp" alt="Acqua di Gio"></a>
+              <figcaption>LAcqua di Gio <br> $ 170</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 5 -->
+           <!-- Início Imagem 6 -->
+           <div class="col-6 col-md-2 pr-0">
+            <figure>
+              <a href="#"><img src="./img/perfumes/destaque/043-brand-collection-1000x1000-1.webp" alt="Brand Collection"></a>
+              <figcaption>Brand Collection <br> $200</figcaption>
+            </figure>
+           </div>
+           <!-- Fim Imagem 6 -->
+            <!-- Início Saiba Mais -->
+             <div class="col-12 d-flex justify-content-center">
+              <a id="saiba-mais" href="#">Saiba mais!</a>
+             </div>
+            <!-- Fim Saiba Mais -->
+        </div>
+      </div>
+    </div>
+     <!-- Fim Destaque -->
+      <!-- Início Novidades -->
+       <div class="novidades" id="novidades-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Início Texto Novidades -->
+               <section class="text-body">
+                <h2>Conheça nossas novidades</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, provident! Velit perspiciatis asperiores ullam optio odio! Rem saepe quod perspiciatis doloremque aliquid sapiente facere pariatur possimus. Nisi temporibus quis doloremque.</p>
+                <!-- target="_blank" > irá abrir o link de destino em uma nova aba no navegador -->
+                 <a class="btn-banner" href="#" target="_blank">Saiba mais!</a>
+               </section>
+              <!-- Fim Texto Novidades -->
+            </div>
+            <!-- Início Imagem novidades -->
+             <div class="col-md-6">
+              <figure>
+                <img class="img-fluid" src="./img/perfumes/destaque/Top-5-Perfumes-Mulher-2-1024x712.jpg" alt="">
+              </figure>
+             </div>
+            <!-- Fim Imagem novidades -->
+          </div>
+        </div>
+       </div>
+      <!-- Fim Novidades -->
+       <!-- Início galeria -->
+        <div class="galeria d-flex align-itens-center">
+          <div class="container">
+            <div class="row">
+              <!-- Início texto galeria -->
+               <div class="col-12">
+                <section class="texto-galeria">
+                  <h2>Conheça nossas opções de Perfumes Nacionais e Importadoes!</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis alias sequi distinctio omnis inventore officiis incidunt, rerum dicta architecto ab a quae, nesciunt in fugiat tenetur dolorem soluta eveniet earum?</p>
+                </section>
+               </div>
+              <!-- Fim texto galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+               <!-- Início imagem galeria -->
+                <div class="gallery col-6 col-md-3">
+                  <img class="img-fluid" src="./img/perfumes/destaque/1000x1000-Carolina-Herrera-CH.webp" alt="Perfume Carolina Herrera">
+                </div>
+               <!-- Fim imagem galeria -->
+            </div>
+          </div>
+        </div>
+       <!-- Fim galeria -->
+        <!-- Início Whatsapp -->
+         <div class="whatsapp">
+          <div class="container-grid logo-whats">
+            <a href="https://wa.link/j8sxbg" target="_blank">
+              <img class="pulse" src="./img/rede_social/whats.png" alt="Entre em contato via nossa canal do Whatspp.">
+            </a>
+          </div>
+         </div>
+        <!-- Fim Whatsapp -->
+         <!-- Início Footer -->
+          <footer class="rodape">
+            <div class="container">
+              <div class="row m-0">
+                <!-- Início Logo -->
+                 <div class="col-md-4" id="logo-rodape">
+                  <figure>
+                    <img src="./img/perfumes/logo_france_perfumes.png" alt="Logo Rodape">
+                  </figure>
+                 </div>
+                <!-- Fim Logo -->
+                 <!-- Início Texto Contato -->
+                  <div class="col-md-4">
+                    <div class="info-contato">
+                      <p><strong>Email:</strong></p>
+                      <p>france@perfumes.com</p><br>
+                      <p><strong>Endereço:</strong></p>
+                      <p>Avenida Brasil, 1000</p><br>
+                      <p><strong>Telefone:</strong></p>
+                      <p>+55 15 99800-1234</p>
+                    </div>
+                  </div>
+                 <!-- Fim Texto Contato -->
+                  <!-- Início Redes Sociais -->
+                  <div class="col-md-4">
+                    <figure class="redes-sociais">
+                      <a href="http://www.facebook.com" target="_blank"><img src="./img/rede_social/face.png" alt="Facebook"></a>
+                      <a href="http://www.instagram.com" target="_blank"><img src="./img/rede_social/insta.png" alt="Instagram"></a>
+                      <a href="http://www.youtube.com" target="_blank"><img src="./img/rede_social/youtube.png" alt="YouTube"></a>
+                      <a href="http://www.linkedin.com" target="_blank"><img src="./img/rede_social/linkedin.png" alt="Linkedin"></a>
+                    </figure>
+                    <br>
+                    <a class="linkFooter" href="#">Home</a>
+                    <a class="linkFooter" href="#">Quem Somos</a>
+                    <a class="linkFooter" href="#">Produtos</a>
+                    <a class="linkFooter" href="#">Contato</a>
+                    <a class="linkFooter" href="#">#Blog</a>
+                  </div>
+                  <!-- Fim Redes Sociais -->
+                   <!-- Início Direito Autorais -->
+                    <div class="col-12">
+                      <p class="direitos">Todos os direitos reservados &copy; | France Perfum | 2024</p>
+                    </div>
+                   <!-- Fim Direito Autorais -->
+              </div>
+            </div>
+          </footer>
+         <!-- Fim Footer -->
   </body>
-
   <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 </html>

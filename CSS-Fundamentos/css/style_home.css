@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 /* CSS France Perfum */
 /* Início estilo header */
+
 body, ul {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
 }
+
 
 #menu a {
   color: black;
@@ -21,6 +22,7 @@ body, ul {
   border-bottom-right-radius: 15px;
   border-bottom: 2px solid #24ee15;
   box-shadow: 1px 1px 2px #969696;
+  background: #ffffff;
 }
 #menu a:hover {
   font-size: 22px;
@@ -39,24 +41,55 @@ body, ul {
 
 #header {
   box-sizing: border-box;
-  height: 60px;
+  height: 80px;
   padding: 1rem;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   background: #e7e7e7;
   box-shadow: 3px 3px 6px #b1b1b1; /* Sombra do Menu */
+  top: 0;
 }
 
 #menu {
   display: flex;
   list-style: none;
-  gap: 0.8rem; /* rem unidade de medida relativa que varia de acordo
+  align-items: center;
+  gap: 0.8rem; 
+  /* rem unidade de medida relativa que varia de acordo
   com a dimensão do navegador ou dispositivo, por padrão, 1rem é igual
   a 16px */
   /* gap > define o espaçamento entre linhas e colunas de um flexbox*/
+  z-index: 1000;
+  /* justify-content: center; */
+}
+ul, dl, ol #menu{
+  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 #btn-mobile {
   display: none;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#carouselExampleInterval {
+  width: 60%;
+  height: auto;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  /* Garante que o carousel esteja acima de outros elementose 
+  utilizando um número menor #menu, ficará atrás do menu */
+  margin-top: 10px;
+}
+
+.carousel-item img {
+  min-height: 350px;
+  width: 50%;
 }
